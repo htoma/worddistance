@@ -1,4 +1,5 @@
 using System;
+using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -16,7 +17,15 @@ namespace worddistance
 
         static Word2Vec()
         {
-            Model = Model.Load(@"D:\home\site\wwwroot\deps.txt");
+            var env = ConfigurationManager.AppSettings["env"];
+            if (env == "dev")
+            {
+                Model = Model.Load("deps.txt");
+            }
+            else
+            {
+                Model = Model.Load(@"D:\home\site\wwwroot\deps.txt");
+            }
         }
 
         [FunctionName("word2vec")]
@@ -37,8 +46,8 @@ namespace worddistance
             }
             catch (Exception)
             {
-                // should tell there's an error, find a convention!
-                return req.CreateResponse(HttpStatusCode.InternalServerError, int.MaxValue.ToString());
+                const double maxValue = 100.0;
+                return req.CreateResponse(HttpStatusCode.OK, maxValue);
             }
         }
 

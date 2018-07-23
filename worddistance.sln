@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "worddistance", "worddistance\worddistance.csproj", "{BA63FDA5-A176-4306-A21E-940B30641C4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeepAliveWords", "KeepAliveWords\KeepAliveWords.csproj", "{3FD06D1C-221A-44B5-BF35-5C69B31D15D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BA63FDA5-A176-4306-A21E-940B30641C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA63FDA5-A176-4306-A21E-940B30641C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA63FDA5-A176-4306-A21E-940B30641C4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FD06D1C-221A-44B5-BF35-5C69B31D15D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FD06D1C-221A-44B5-BF35-5C69B31D15D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FD06D1C-221A-44B5-BF35-5C69B31D15D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FD06D1C-221A-44B5-BF35-5C69B31D15D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
